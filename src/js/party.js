@@ -1,5 +1,5 @@
 export default function countOrder(party) {
-party.sort(function (a, b) {
+let partySorted = party.toSorted( (a, b) => {
   if (a.health < b.health) {
     return 1;
   }
@@ -8,6 +8,6 @@ party.sort(function (a, b) {
   } 
 }
 );
-return party
+return partySorted
 }
 
